@@ -42,6 +42,10 @@ class OrangeTree
     end
   end
 
+  def to_s
+    "I'm a tree and I'm #{@age} years old"
+  end
+
 end
 
 puts 3 + 1.7
@@ -49,7 +53,7 @@ puts 3 + 1.7
 cad = "esto es una cadena con #{'"sorpresa"'} en el cual podemos poner operaciones como 2 + 1 = #{2 + 1}"
 puts cad
 
-mytree = OrangeTree.new
+mytree = OrangeTree.new 
 
 puts "my tree will live for #{mytree.ageOfDecease.to_i} years"
 
